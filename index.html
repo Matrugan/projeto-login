@@ -10,26 +10,27 @@
 </head>
 <body>
     <main>
-        <img src="imagem/city.jpg">
+        <section id="imagem">
+        </section>
         <article>
             <h1>Login</h1>
             <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente. </p>
         </article>
         <form action="cadastro.php" method="get">
-            <p id="box">
+            <div class="box">
                 <span class="material-icons">person</span>
                 <label for="iemail"></label>
-                <input type="email" name="email" id="iemail">
-            </p>
-            <p id="box">
+                <input type="email" name="email" id="iemail" placeholder="Seu e-mail" autocomplete="email" required maxlength="30">
+            </div>
+            <div class="box">
                 <span class="material-icons">vpn_key</span>
                 <label for="isenha"></label>
-                <input type="password" name="senha" id="isenha">
-            </p>
-            <p>
+                <input type="password" name="senha" id="isenha" placeholder="Sua senha" autocomplete="current-password" required minlength="8">
+            </div>
+            <div>
                 <input id="submit" type="submit" value="Entrar">
                 <input id="reset" type="reset" value="Esqueci a senha 📧">
-            </p>
+            </div>
 
         </form>
     </main>
